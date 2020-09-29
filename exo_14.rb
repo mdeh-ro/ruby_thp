@@ -2,8 +2,9 @@ puts "Choisir un nombre: "
 print "> "
 number = gets.chomp.to_i 
 
-i = number
-while i >= 0
-    puts i
-    i -= 1
+i=0
+
+number.times do
+    puts number - i
+    i+=1
 end
